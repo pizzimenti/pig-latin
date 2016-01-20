@@ -4,7 +4,9 @@ var pigLatin = function(englishPhrase) {
   for (var index = 0; index < 5; index +=1) {
 
     if (englishPhrase[0] === vowels[index]) {
-    return englishPhrase + "ay";
+      return englishPhrase + "ay";
+      } else {
+      return englishPhrase.slice(1) + englishPhrase[0] + "ay";
   }
 }
   //
