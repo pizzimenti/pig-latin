@@ -3,10 +3,13 @@ describe('pigLatin', function() {
     expect(pigLatin("apple")).to.equal("appleay");
   })
 
-  it("relocates first consonant from front to end of word", function() {
+  it("relocates first consonant from beginning to end of word", function() {
     expect(pigLatin("lunch")).to.equal("unchlay");
   })
-  it("relocates first and second consonant from the front to the back", function() {
-    expect(pigLatin("aardvark")).to.equal("aardvarkay");
+  it("relocates first and second consonant from the beginning to the end of word", function() {
+    expect(pigLatin("change")).to.equal("angechay");
   })
+  it("relocates 'qu' from beginning to the end of word", function() {
+    expect(pigLatin("queen")).to.equal("eenquay");
+  });
 });
