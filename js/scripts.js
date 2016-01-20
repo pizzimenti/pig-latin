@@ -1,3 +1,3 @@
-var pigLatin = function(apple) {
-  return false;
+var englishPhrase = function(englishPhrase) {
+  return englishPhrase + "-ay";
 }
