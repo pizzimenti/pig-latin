@@ -7,6 +7,6 @@ describe('pigLatin', function() {
     expect(pigLatin("lunch")).to.equal("unchlay");
   })
   it("relocates first and second consonant from the front to the back", function() {
-    expect(pigLatin("change")).to.equal("angechay");
+    expect(pigLatin("aardvark")).to.equal("aardvarkay");
   })
 });

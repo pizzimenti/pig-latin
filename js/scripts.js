@@ -1,15 +1,21 @@
-var pigLatin = function(englishPhrase) {
+var pigLatin = function(englishPhrase) {  
   var vowels = ['a','e','i','o','u']
 
-  for (var index = 0; index < 5; index +=1) {
+  for (var index = 0; index < 5; index++) {
 
     if (englishPhrase[0] === vowels[index]) {
       return englishPhrase + "ay";
-      } else {
+    } else if (englishPhrase[1] != vowels[index]){
+
       return englishPhrase.slice(1) + englishPhrase[0] + "ay";
-  }
+      } else {
+      return englishPhrase.slice(2) + englishPhrase[0] + englishPhrase[1] + "ay";
+      }
 }
-  //
+
+
+
+
   // } else if (englishPhrase[1] === 'a' || englishPhrase[1] === 'e' || englishPhrase[1] === 'i' || englishPhrase[1] === 'o' || englishPhrase[1] === 'u') {
   //    return englishPhrase.slice(1) + englishPhrase[0] + "ay";
 
