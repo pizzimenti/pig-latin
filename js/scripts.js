@@ -6,17 +6,18 @@ var pigLatin = function(englishPhrase) {
   } else if (englishPhrase[0] === 'q' && englishPhrase[1] === 'u') {
     return englishPhrase.slice(2) + englishPhrase[0] + englishPhrase[1] + "ay";
 
-
   } else if (englishPhrase[1] === 'a' || englishPhrase[1] === 'e' || englishPhrase[1] === 'i' || englishPhrase[1] === 'o' || englishPhrase[1] === 'u') {
      return englishPhrase.slice(1) + englishPhrase[0] + "ay";
   }
   return englishPhrase.slice(2) + englishPhrase[0] + englishPhrase[1] + "ay";
-
 };
 
+//      The commented code below was our attempt at looping through an array but it broke our logic in unexplainable ways.
 
 
+//
 //   var vowels = ['a','e','i','o','u']
+//   var lettersRemaining = englishPhrase.length
 //
 //   for (var index = 0; index < 5; index++) {
 //
@@ -31,4 +32,4 @@ var pigLatin = function(englishPhrase) {
 //       var translatedPhrase = englishPhrase.slice(2) + englishPhrase[0] + englishPhrase[1] + "ay";
 //       return translatedPhrase;
 //       }
-// }
+// };
